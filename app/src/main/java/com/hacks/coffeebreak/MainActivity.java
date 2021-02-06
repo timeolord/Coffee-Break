@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +16,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Login(View v){
-        startActivity(new Intent(MainActivity.this, MainScreen.class));
+        String email = ((EditText)findViewById(R.id.LoginEmail)).getText().toString();
+        String password = ((EditText)findViewById(R.id.LoginPass)).getText().toString();
+
+        if (email == "admin" && password == "admin"){
+            startActivity(new Intent(MainActivity.this, Homepage.class));
+        }
+        else {
+
+        }
     }
 
 }
