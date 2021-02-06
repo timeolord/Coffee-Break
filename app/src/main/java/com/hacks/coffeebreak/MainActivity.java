@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (email.equals("admin") && password.equals("admin")){
             startActivity(new Intent(MainActivity.this, Homepage.class));
+            finish();
         }
         else {
             CharSequence error = "Email or Password is wrong.";

@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/l_green</item>
         <item name="colorOnPrimary">@color/d_green</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/reg_green</item>
+        <item name="colorSecondary">@color/bg_green</item>
         <item name="colorSecondaryVariant">@color/l_green</item>
         <item name="colorOnSecondary">@color/d_blue</item>
         <!-- Status bar color. -->
