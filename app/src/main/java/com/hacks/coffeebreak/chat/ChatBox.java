@@ -17,10 +17,12 @@ import android.widget.TextView;
 import com.hacks.coffeebreak.R;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class ChatBox extends AppCompatActivity {
     ArrayList<Message> texts = new ArrayList<>();
     Runnable Chatbot = new ChatBot(this);
+    Random random = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +87,7 @@ public class ChatBox extends AppCompatActivity {
         layout.gravity = Gravity.LEFT;
         layout.setMargins(10,10,10,10);
         textView.setLayoutParams(layout);
-        textView.setText("Hi there!");
+        textView.setText(getRandomString());
         textView.setBackground(GetResource("roundbutton"));
         textView.setPadding(40, 30, 40, 30);
         textView.setTextSize(20);
@@ -96,6 +98,13 @@ public class ChatBox extends AppCompatActivity {
         scroll.fullScroll(View.FOCUS_DOWN);
 
         box.addView(textView);
+    }
+
+    private String getRandomString(){
+        String[] words = {"Hi There!", "How are you?", "This app is cool!", "sup", "Hello", "salutations", "greetings", "Salve", "Bonjour",
+                "您好", "Merhaba", "こんにちは"};
+        int rand = Math.abs(random.nextInt()%(words.length));
+        return words[rand];
     }
 
 }

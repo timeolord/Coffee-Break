@@ -2,10 +2,13 @@ package com.hacks.coffeebreak;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
+import com.hacks.coffeebreak.chat.ChatBox;
 
 public class Homepage extends AppCompatActivity {
 
@@ -28,7 +31,7 @@ public class Homepage extends AppCompatActivity {
         return true;
     }
 
-
-
-
+    public void ToMessenger(View v){
+        startActivity(new Intent(Homepage.this, ChatBox.class));
+    }
 }
