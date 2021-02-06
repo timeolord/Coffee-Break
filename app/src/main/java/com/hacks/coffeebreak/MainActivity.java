@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         String email = ((EditText)findViewById(R.id.LoginEmail)).getText().toString();
         String password = ((EditText)findViewById(R.id.LoginPass)).getText().toString();
 
-        if (email == "admin" && password == "admin"){
+        if (email.equals("admin") && password.equals("admin")){
             startActivity(new Intent(MainActivity.this, Homepage.class));
         }
         else {
-
+            CharSequence error = "Email or Password is wrong.";
         }
     }
 
