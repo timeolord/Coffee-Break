@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Homepage">
 
+
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -33,7 +35,9 @@
             app:fabAlignmentMode="center"
             app:contentInsetEnd="16dp"
             app:contentInsetStart="16dp"
-            app:backgroundTint="@color/white">
+            app:backgroundTint="@color/white"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="30dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
