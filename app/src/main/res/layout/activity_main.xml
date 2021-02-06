@@ -52,6 +52,7 @@
         android:layout_height="63dp"
         android:layout_marginBottom="128dp"
         android:background="@drawable/roundbutton"
+        android:onClick="Login"
         android:text="Log In"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +62,7 @@
         app:layout_constraintVertical_bias="0.504" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/LogoBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/divider"
@@ -73,7 +74,7 @@
         app:srcCompat="@drawable/square" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/Logo"
         android:layout_width="161dp"
         android:layout_height="157dp"
         android:layout_marginBottom="128dp"
@@ -93,6 +94,6 @@
         app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
