@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_m);
     }
 
     public void Login(View v){
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
         else {
-            CharSequence error = "Email or Password is wrong.";
+            CharSequence error = "Email or password is incorrect.";
             int duration = Toast.LENGTH_LONG;
             Toast toast = Toast.makeText(getApplicationContext(), error, duration);
             toast.show();

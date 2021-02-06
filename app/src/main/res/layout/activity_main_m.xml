@@ -81,10 +81,9 @@
     <ImageView
         android:id="@+id/logoBand"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
+        android:layout_height="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogoBackground"
         app:srcCompat="@drawable/square_l_g" />
@@ -104,9 +103,9 @@
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="10dp"
         android:layout_marginBottom="64dp"
-        android:background="?android:attr/listDivider"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
