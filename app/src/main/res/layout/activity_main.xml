@@ -46,4 +46,27 @@
         app:layout_constraintBottom_toTopOf="@+id/LoginPass"
         app:layout_constraintStart_toStartOf="@+id/LoginPass" />
 
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="248dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/roundbutton"
+        android:text="Log In"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPass"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
 </androidx.constraintlayout.widget.ConstraintLayout>
