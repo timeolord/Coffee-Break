@@ -1,6 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.CoffeeBreak" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/metropolis</item>
+        <item name="fontFamily">@font/metropolis</item>
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/reg_green</item>
         <item name="colorPrimaryVariant">@color/l_green</item>

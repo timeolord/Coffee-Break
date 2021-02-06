@@ -12,10 +12,10 @@ public class Homepage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
     }
 
-    public void AccessProfile (View v) {
+    //public void AccessProfile (View v) {
 
 
-    }
+    //}
 
 
 }
