@@ -34,4 +34,8 @@ public class Homepage extends AppCompatActivity {
     public void ToMessenger(View v){
         startActivity(new Intent(Homepage.this, ChatBox.class));
     }
+
+    public void ToProfilePage(View v){
+        startActivity(new Intent(Homepage.this, ProfilePage.class));
+    }
 }

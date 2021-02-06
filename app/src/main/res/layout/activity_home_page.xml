@@ -62,6 +62,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="ToProfilePage"
                     app:srcCompat="@drawable/ic_baseline_person_24"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:tint="@color/black"/>
