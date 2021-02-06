@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="salmon">#FF7A59</color>
+    <color name="bg_green">#12e6a5</color>
+    <color name="d_green">#31525b</color>
+    <color name="l_green">#77f7c5</color>
+    <color name="reg_green">#21ce99</color>
+    <color name="d_blue">#060d16</color>
 </resources>
