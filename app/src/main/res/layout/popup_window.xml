@@ -28,11 +28,11 @@
 
 
     <Button
+        android:id="@+id/closebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:backgroundTint="@color/l_green"
-        android:onClick="ExitPopup"
         android:text="Not yet..."
         android:textColor="@color/white"
         android:textStyle="bold" />

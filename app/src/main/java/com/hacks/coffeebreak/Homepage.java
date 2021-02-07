@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.animation.ObjectAnimator;
@@ -39,12 +40,13 @@ public class Homepage extends AppCompatActivity {
         startActivity(new Intent(Homepage.this, ChatBox.class));
     }
     //TODO: EAT MY ASS
-    public void ExitPopup(View v){
-    }
+
 
     public void ToZuck(View v){
         startActivity(new Intent(Homepage.this, ProfilePage.class));
     }
+
+
 
     public void onButtonShowPopupWindowClick(View view) {
 
@@ -71,12 +73,14 @@ public class Homepage extends AppCompatActivity {
         // which view you pass in doesn't matter, it is only used for the window tolken
         popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
 
-        // dismiss the popup window when touched
-        popupView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
+        // dismiss the popup window when click no
+
+        Button close = (Button) popupView.findViewById(R.id.closebutton);
+        close.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View popupView) {
                 popupWindow.dismiss();
-                return true;
+
             }
         });
     }
