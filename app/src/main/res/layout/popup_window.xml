@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/popup"
-    android:orientation="vertical"
-    android:padding="15dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/bg_green">
+    android:background="@drawable/lessround"
+    android:orientation="vertical"
+    android:padding="15dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ready to start messaging?"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="70px"
-        android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yes!"
-        android:textStyle="bold"
-        android:textColor="@color/white"
         android:layout_gravity="center"
         android:backgroundTint="@color/l_green"
-        android:onClick="Message"/>
+        android:onClick="Message"
+        android:text="Yes!"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:backgroundTint="@color/l_green"
+        android:onClick="ExitPopup"
         android:text="Not yet..."
         android:textColor="@color/white"
-        android:layout_gravity="center"
-        android:onClick="ExitPopup"
         android:textStyle="bold" />
 
 </LinearLayout>

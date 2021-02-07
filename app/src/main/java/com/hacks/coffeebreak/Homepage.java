@@ -40,7 +40,10 @@ public class Homepage extends AppCompatActivity {
     }
     //TODO: EAT MY ASS
     public void ExitPopup(View v){
+    }
 
+    public void ToZuck(View v){
+        startActivity(new Intent(Homepage.this, ProfilePage.class));
     }
 
     public void onButtonShowPopupWindowClick(View view) {

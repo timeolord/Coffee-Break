@@ -65,7 +65,8 @@
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_baseline_person_24"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:tint="@color/black"/>
+                    android:tint="@color/black"
+                    android:onClick="ToZuck"/>
             </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
 
