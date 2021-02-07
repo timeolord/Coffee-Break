@@ -84,7 +84,7 @@
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
-        android:layout_height="110dp"
+        android:layout_height="130dp"
         android:layout_marginTop="410dp"
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,53 +96,171 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/michele" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
 
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/jobs" />
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView14"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/d_blue"
+                    android:text="Michelle" />
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/image" />
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/michele" />
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/billu" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView13"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/d_blue"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Steve" />
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/b748d928aed64a7183386d4647458301" />
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/jobs" />
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/asg" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView12"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/d_blue"
+                    android:layout_weight="1"
+                    android:text="Jack" />
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/image" />
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                app:srcCompat="@mipmap/elon_musk" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/imageView10"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/d_blue"
+                    android:text="Bill" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/billu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/imageView9"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/d_blue"
+                    android:text="Jeff" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/b748d928aed64a7183386d4647458301" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/imageView7"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/d_blue"
+                    android:text="Warren" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/asg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/imageView11"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/d_blue"
+                    android:text="Elon" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/elon_musk" />
+            </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
 
