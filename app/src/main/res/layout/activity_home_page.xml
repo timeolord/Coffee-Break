@@ -312,6 +312,7 @@
                     android:layout_weight="1"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:tint="@color/black"
+                    android:onClick="GoHome"
                     app:srcCompat="@drawable/ic_baseline_home_24" />
 
 
