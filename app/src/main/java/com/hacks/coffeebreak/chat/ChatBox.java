@@ -3,6 +3,7 @@ package com.hacks.coffeebreak.chat;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -14,6 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.hacks.coffeebreak.ElonPage;
+import com.hacks.coffeebreak.Homepage;
+import com.hacks.coffeebreak.ProfilePage;
 import com.hacks.coffeebreak.R;
 
 import java.util.ArrayList;
@@ -105,6 +109,10 @@ public class ChatBox extends AppCompatActivity {
                 "您好", "Merhaba", "こんにちは"};
         int rand = Math.abs(random.nextInt()%(words.length));
         return words[rand];
+    }
+
+    public void ToElon(View v){
+        startActivity(new Intent(ChatBox.this, ElonPage.class));
     }
 
 }
