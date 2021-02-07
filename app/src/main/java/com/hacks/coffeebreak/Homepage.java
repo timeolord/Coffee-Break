@@ -25,6 +25,7 @@ import com.hacks.coffeebreak.chat.Message;
 public class Homepage extends AppCompatActivity {
 
     private BottomAppBar mBottomAppBar;
+    PopupWindow popupWindow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class Homepage extends AppCompatActivity {
 
     public void Message(View v){
         startActivity(new Intent(Homepage.this, Matcher.class));
+        popupWindow.dismiss();
     }
 
 
@@ -60,7 +62,7 @@ public class Homepage extends AppCompatActivity {
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
         int height = LinearLayout.LayoutParams.WRAP_CONTENT;
         boolean focusable = true; // lets taps outside the popup also dismiss it
-        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+        popupWindow = new PopupWindow(popupView, width, height, focusable);
         //popupWindow.setAnimationStyle(R.style.Animation_Dialog);
 
         YoYo.with(Techniques.BounceInLeft)

@@ -29,11 +29,13 @@ public class ChatBox extends AppCompatActivity {
     ArrayList<Message> texts = new ArrayList<>();
     Runnable Chatbot = new ChatBot(this);
     Random random = new Random();
+    private int time = 899;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_box);
+        Timer();
 
     }
 
@@ -112,14 +114,41 @@ public class ChatBox extends AppCompatActivity {
     }
 
     private String getRandomString(){
-        String[] words = {"Hi There!", "How are you?", "This app is cool!", "sup", "Hello", "salutations", "greetings", "Salve", "Bonjour",
-                "您好", "Merhaba", "こんにちは"};
+        String[] words = {"Hi There!", "How are you?", "This app is cool!"
+                //, "sup", "Hello", "salutations", "greetings", "Salve", "Bonjour", "您好", "Merhaba", "こんにちは"
+        };
         int rand = Math.abs(random.nextInt()%(words.length));
         return words[rand];
     }
 
     public void ToElon(View v){
         startActivity(new Intent(ChatBox.this, ElonPage.class));
+    }
+
+    private void Timer(){
+        TextView timer = (TextView) findViewById(R.id.Timer);
+        timer.setText(TimeToString(time));
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                time--;
+                Timer();
+            }
+        }, 1000);
+    }
+
+    private String TimeToString(int time){
+        String times;
+        int hour = time / 60;
+        int minute = hour % 60;
+        int seconds = time % 60;
+        if (seconds == 0){
+            times = minute + ":00";
+        }
+        else {
+            times = minute + ":" + seconds;
+        }
+        return times;
     }
 
 }

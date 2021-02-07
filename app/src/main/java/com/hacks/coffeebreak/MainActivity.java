@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Test(View v){
-        startActivity(new Intent(MainActivity.this, Matcher.class));
-        finish();
     }
 
 }
