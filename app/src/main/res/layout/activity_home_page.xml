@@ -25,8 +25,8 @@
         android:layout_marginStart="200dp"
         android:layout_marginTop="250dp"
         android:text="Hi Mark!"
-        android:textSize="25dp"
         android:textColor="@color/d_blue"
+        android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout2"
         app:layout_constraintEnd_toStartOf="@+id/coordinatorLayout2"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,10 +36,49 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/d_blue"
         android:text="Welcome back! Ready for a Coffee Break?"
+        android:textColor="@color/d_blue"
         app:layout_constraintStart_toStartOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="287dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="100dp"
+        android:text="There are       Sun Life co-workers waiting to chat!"
+        android:textColor="@color/d_blue"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:text="57"
+        android:textColor="@color/bg_green"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/faces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" >
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="80dp"
+            android:layout_height="92dp"
+            app:srcCompat="@mipmap/elon_musk" />
+    </androidx.cardview.widget.CardView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout2"
@@ -48,6 +87,7 @@
 
         <!-- Note: A RecyclerView can also be used -->
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
             android:layout_width="1124dp"
             android:layout_height="1627dp"
             android:clipToPadding="false"
