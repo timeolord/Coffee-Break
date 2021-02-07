@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,8 +27,8 @@
         android:layout_marginTop="250dp"
         android:text="Mark"
         android:textColor="@color/reg_green"
-        android:textSize="25dp"
         android:textFontWeight="500"
+        android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout2"
         app:layout_constraintEnd_toStartOf="@+id/coordinatorLayout2"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,6 +84,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="wrap_content"
         android:layout_height="130dp"
         android:layout_marginTop="410dp"
@@ -110,8 +112,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="@color/d_blue"
-                    android:text="Michelle" />
+                    android:text="Michelle"
+                    android:textColor="@color/d_blue" />
 
                 <ImageView
                     android:id="@+id/imageView14"
@@ -126,16 +128,17 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1">
+
                 <TextView
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imageView13"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@color/d_blue"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Steve" />
+                    android:text="Steve"
+                    android:textColor="@color/d_blue" />
 
                 <ImageView
                     android:id="@+id/imageView13"
@@ -150,16 +153,18 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1">
+
                 <TextView
                     android:id="@+id/textView18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imageView12"
                     android:layout_centerHorizontal="true"
-                    android:gravity="center"
-                    android:textColor="@color/d_blue"
                     android:layout_weight="1"
-                    android:text="Jack" />
+                    android:gravity="center"
+                    android:text="Jack"
+                    android:textColor="@color/d_blue" />
+
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="120dp"
@@ -173,16 +178,17 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1">
+
                 <TextView
                     android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_below="@+id/imageView10"
                     android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="@color/d_blue"
-                    android:text="Bill" />
+                    android:text="Bill"
+                    android:textColor="@color/d_blue" />
 
                 <ImageView
                     android:id="@+id/imageView10"
@@ -197,16 +203,17 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1">
+
                 <TextView
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_below="@+id/imageView9"
                     android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="@color/d_blue"
-                    android:text="Jeff" />
+                    android:text="Jeff"
+                    android:textColor="@color/d_blue" />
 
                 <ImageView
                     android:id="@+id/imageView9"
@@ -215,21 +222,23 @@
                     android:layout_weight="1"
                     app:srcCompat="@mipmap/b748d928aed64a7183386d4647458301" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
                 <TextView
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_below="@+id/imageView7"
                     android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="@color/d_blue"
-                    android:text="Warren" />
+                    android:text="Warren"
+                    android:textColor="@color/d_blue" />
 
                 <ImageView
                     android:id="@+id/imageView7"
@@ -244,16 +253,17 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1">
+
                 <TextView
                     android:id="@+id/textView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_below="@+id/imageView11"
                     android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="@color/d_blue"
-                    android:text="Elon" />
+                    android:text="Elon"
+                    android:textColor="@color/d_blue" />
 
                 <ImageView
                     android:id="@+id/imageView11"
@@ -263,6 +273,128 @@
             </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/d_blue"
+        android:textSize="15dp"
+        android:text="Here are some popular interests..."
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="150dp"
+        app:cardBackgroundColor="@color/reg_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        card_view:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="surfing"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="110dp"
+        app:cardBackgroundColor="@color/reg_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        card_view:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="skincare"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="110dp"
+        app:cardBackgroundColor="@color/reg_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        card_view:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="rockets"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="150dp"
+        app:cardBackgroundColor="#ff17be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        card_view:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="programming"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="110dp"
+        app:cardBackgroundColor="@color/reg_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        card_view:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="cars"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout2"
@@ -311,8 +443,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:tint="@color/black"
                     android:onClick="GoHome"
+                    android:tint="@color/black"
                     app:srcCompat="@drawable/ic_baseline_home_24" />
 
 
