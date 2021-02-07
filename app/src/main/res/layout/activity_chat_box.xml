@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
         android:text="15:00"
+        android:textColor="@color/d_blue"
         app:layout_constraintBottom_toBottomOf="@+id/TextScroller"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
