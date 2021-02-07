@@ -37,9 +37,8 @@ public class Homepage extends AppCompatActivity {
     }
 
     public void Message(View v){
-        startActivity(new Intent(Homepage.this, ChatBox.class));
+        startActivity(new Intent(Homepage.this, Matcher.class));
     }
-    //TODO: EAT MY ASS
 
 
     public void ToZuck(View v){
@@ -64,7 +63,7 @@ public class Homepage extends AppCompatActivity {
         final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
         //popupWindow.setAnimationStyle(R.style.Animation_Dialog);
 
-        YoYo.with(Techniques.BounceIn)
+        YoYo.with(Techniques.BounceInLeft)
                 .duration(700)
                 .playOn(popupView);
 

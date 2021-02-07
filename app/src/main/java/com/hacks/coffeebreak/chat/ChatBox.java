@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 
 import com.hacks.coffeebreak.ElonPage;
 import com.hacks.coffeebreak.Homepage;
+import com.hacks.coffeebreak.Matcher;
 import com.hacks.coffeebreak.ProfilePage;
 import com.hacks.coffeebreak.R;
 
@@ -78,7 +80,12 @@ public class ChatBox extends AppCompatActivity {
 
         box.addView(textView);
 
-        Reply();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                Reply();
+            }
+        }, 1500);
 
        // runOnUiThread(Chatbot);
     }

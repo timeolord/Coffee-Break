@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">Coffee Break</string>
     <string name="forgot_pass"> <u> Forgot password?</u> </string>
+
+    <string-array name="empty">
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="rainbow_dash">
+        <item>@color/bg_green</item>
+        <item>@color/d_green</item>
+        <item>@color/l_green</item>
+        <item>@color/white</item>
+        <item>@color/reg_green</item>
+    </string-array>
 </resources>

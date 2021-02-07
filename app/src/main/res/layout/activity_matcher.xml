@@ -6,11 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".Matcher">
 
-    <ImageView
+    <com.adefruandta.spinningwheel.SpinningWheelView
+        android:id="@+id/wheel"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@mipmap/wheel"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="128dp"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:wheel_arrow_color="@android:color/black"
+        app:wheel_colors="@array/rainbow_dash"
+        app:wheel_items="@array/empty"
+        app:wheel_stroke_color="@color/d_blue"
+        app:wheel_stroke_width="5dp" />
+
+    <TextView
+        android:id="@+id/FunnyText"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="70dp"
+        android:textColor="@color/d_blue"
+        android:text="Finding someone who likes Game of Thrones as much as you do..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
