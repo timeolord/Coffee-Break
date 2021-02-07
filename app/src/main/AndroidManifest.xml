@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeBreak">
-        <activity android:name=".ElonPage"></activity>
+        <activity android:name=".ElonPage" />
         <activity android:name=".ProfilePage" />
         <activity android:name=".chat.ChatBox" />
         <activity android:name=".Homepage" />

@@ -2,6 +2,7 @@ package com.hacks.coffeebreak;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -17,6 +18,8 @@ import com.daimajia.androidanimations.library.BaseViewAnimator;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.google.android.material.bottomappbar.BottomAppBar;
+import com.hacks.coffeebreak.chat.ChatBox;
+import com.hacks.coffeebreak.chat.Message;
 
 public class Homepage extends AppCompatActivity {
 
@@ -32,18 +35,12 @@ public class Homepage extends AppCompatActivity {
 
     }
 
+    public void Message(View v){
+        startActivity(new Intent(Homepage.this, ChatBox.class));
+    }
+    //TODO: EAT MY ASS
+    public void ExitPopup(View v){
 
-
-
-    public class ZoomInAnimator extends BaseViewAnimator {
-        @Override
-        public void prepare(View target) {
-            getAnimatorAgent().playTogether(
-                    ObjectAnimator.ofFloat(target, "scaleX", 0.45f, 1),
-                    ObjectAnimator.ofFloat(target, "scaleY", 0.45f, 1),
-                    ObjectAnimator.ofFloat(target, "alpha", 0, 1)
-            );
-        }
     }
 
     public void onButtonShowPopupWindowClick(View view) {
