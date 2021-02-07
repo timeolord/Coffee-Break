@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_green">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready to start messaging?"
+        android:textAlignment="center"
+        android:textSize="70px"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes!"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/l_green"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/l_green"
+        android:text="Not yet..."
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+
+
+        android:textStyle="bold" />
+
+</LinearLayout>
