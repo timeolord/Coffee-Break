@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/LoginEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="@android:color/transparent"
+        android:text="Email"
+        android:textColor="@color/d_blue"
+        app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
+        app:layout_constraintStart_toStartOf="@+id/LoginEmail" />
+
     <EditText
         android:id="@+id/LoginEmail"
         android:layout_width="252dp"
@@ -14,40 +25,32 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
-
-    <EditText
-        android:id="@+id/LoginPass"
-        android:layout_width="254dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginEmail" />
-
-    <TextView
-        android:id="@+id/LoginEmailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:text="Email"
-        android:textColor="@color/d_blue"
-        app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
-        app:layout_constraintStart_toStartOf="@+id/LoginEmail" />
+        app:layout_constraintVertical_bias="0.51" />
 
     <TextView
         android:id="@+id/LoginPassText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:text="Password"
         android:textColor="@color/d_blue"
         app:layout_constraintBottom_toTopOf="@+id/LoginPass"
         app:layout_constraintStart_toStartOf="@+id/LoginPass" />
+
+    <EditText
+        android:id="@+id/LoginPass"
+        android:layout_width="254dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEmail" />
 
     <Button
         android:id="@+id/LoginButton"
@@ -66,51 +69,6 @@
         app:layout_constraintVertical_bias="0.504" />
 
 
-    <ImageView
-        android:id="@+id/LogoBackground"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/divider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/square" />
-
-    <ImageView
-        android:id="@+id/logoBand"
-        android:layout_width="0dp"
-        android:layout_height="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogoBackground"
-        app:srcCompat="@drawable/square_l_g" />
-
-    <ImageView
-        android:id="@+id/Logo"
-        android:layout_width="161dp"
-        android:layout_height="157dp"
-        android:layout_marginBottom="128dp"
-        app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_marginBottom="64dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/LoginEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Logo" />
-
     <Button
         android:id="@+id/ForgotPassword"
         android:layout_width="199dp"
@@ -128,14 +86,36 @@
         android:id="@+id/LogoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="1dp"
         android:fontFamily="@font/metropolis"
-        android:textFontWeight="500"
         android:text="Coffee Break"
+        android:textFontWeight="500"
         android:textSize="38sp"
-        app:layout_constraintBottom_toBottomOf="@+id/LogoBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/signInNutShot" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_guh_icon_circle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
