@@ -47,6 +47,10 @@ public class Homepage extends AppCompatActivity {
         startActivity(new Intent(Homepage.this, ProfilePage.class));
     }
 
+    public void GoHome(View v) {
+        startActivity(new Intent(Homepage.this,Homepage.class));
+    }
+
 
 
     public void onButtonShowPopupWindowClick(View view) {

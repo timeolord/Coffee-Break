@@ -29,10 +29,12 @@
         android:layout_width="0dp"
         android:layout_height="79dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="450dp"
         android:layout_marginEnd="70dp"
         android:textColor="@color/d_blue"
         android:text="Finding someone who likes Game of Thrones as much as you do..."
+        android:textAlignment="center"
+        android:textSize="50px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
